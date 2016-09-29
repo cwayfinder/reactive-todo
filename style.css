@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+}
+
+.todo-list-wrapper {
+    border: 1px solid #777;
+    border-bottom: none;
+}
+
+.todo-list-wrapper .add-todo {
+    display: flex;
+    padding: 5px;
+    border-bottom: 1px solid #777;
+}
+
+.add-todo input {
+    flex: 1;
+    font-size: 14px;
+}
+
+.add-todo button {
+    font-size: 14px;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    padding: 5px;
+    border-bottom: 1px solid #777;
+    display: flex;
+}
+
+#todo-list [type=checkbox] {
+    width: 24px;
+}
+
+#todo-list .delete-icon {
+    width: 16px;
+    cursor: pointer;
+}
+
+#todo-list .text {
+    flex: 1;
+}
+
+#todo-list [checked] + span {
+    color: #ccc;
+    font-style: italic;
+    text-decoration: line-through;
+}
